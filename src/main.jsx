@@ -7,6 +7,7 @@ import Layout from "./layout/Layout";
 import { AuthProvider } from "./auth/AuthContext";
 import { ApiProvider } from "./api/ApiContext";
 import { PageProvider } from "./layout/PageContext";
+import "bootstrap/dist/css/bootstrap.css";
 
 createRoot(document.getElementById("root")).render(
   <AuthProvider>
@@ -17,5 +18,5 @@ createRoot(document.getElementById("root")).render(
         </Layout>
       </PageProvider>
     </ApiProvider>
-  </AuthProvider>,
+  </AuthProvider>
 );
